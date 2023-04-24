@@ -1,0 +1,291 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.logo,
+.menu-lista,
+.sobre-nos,
+.vagas-showcase,
+.vagas1,
+.vagas2,
+.vaga-info,
+.depoimentos,
+.footer,
+.footer-form {
+  display: flex;
+}
+
+.sobre-nos,
+.vagas-showcase,
+.vagas1,
+.vagas2,
+.depoimentos,
+.footer {
+  flex-direction: column;
+}
+
+.header,
+.logo.botao,
+.vagas-showcase,
+.depoimentos,
+.footer {
+  align-items: center;
+}
+.menu-extra,
+.sobre-nos,
+.ad-vagas,
+.depoimentos,
+.footer {
+  text-align: center;
+}
+
+/* Menu*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 80px;
+  padding: 18px 0;
+}
+.logo {
+  gap: 8px;
+}
+.menu-lista {
+  gap: 32px;
+}
+
+.menu-lista a:hover {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.botoes-menu {
+  place-self: end;
+  gap: 12px;
+}
+.menu-extra {
+  display: none;
+}
+/* Menu*/
+
+/* Sobre Nos*/
+.sobre-nos {
+  padding: 96px 0;
+  gap: 24px;
+}
+.sobre-nos span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.sobre-nos h1 {
+  font-size: 48px;
+}
+.sobre-nos p {
+  margin: 0 auto;
+  max-width: 65ch;
+  font-size: 20px;
+}
+/* Sobre Nos*/
+
+/* Metricas*/
+.metricas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 32px;
+  margin-bottom: 96px;
+}
+.metrica-box {
+  width: 100%;
+}
+.metrica-box h1 {
+  font-size: 60px;
+  margin-bottom: 12px;
+}
+.metrica-box span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.metrica-box p {
+  margin-top: 8px;
+}
+/* Metricas*/
+
+/* Ad Vagas*/
+.ad-vagas {
+  margin-bottom: 64px;
+}
+.ad-vagas span {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 16px;
+  background-color: rgba(142, 36, 36, 0.1);
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+.ad-vagas img {
+  border-radius: 8px;
+}
+.ad-vagas h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.ad-vagas p {
+  font-size: 20px;
+  margin-bottom: 64px;
+}
+/* Ad Vagas*/
+
+/*vagas*/
+.vagas-showcase {
+  gap: 64px;
+  margin-bottom: 96px;
+}
+.vagas1,
+.vagas2 {
+  gap: 24px;
+}
+.vagas1 h1,
+.vagas2 h1 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  width: 768px;
+}
+
+.vaga-container {
+  padding: 24px;
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: 0.3s;
+}
+
+.vaga-container:hover {
+  transform: scale(1.1);
+}
+
+.vaga-container p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.vaga-info {
+  font-size: 16px;
+  gap: 24px;
+}
+/* Vagas*/
+
+/* Depoimentos*/
+.depoimentos {
+  padding: 64px;
+  border-radius: 16px;
+  background-color: rgba(142, 36, 36, 0.1);
+  margin-bottom: 96px;
+}
+.depoimentos span {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.depoimentos h1 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+.depoimentos img {
+  margin-bottom: 16px;
+}
+
+.depoimentos p {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.depoimentos p:last-child {
+  font-size: 14px;
+}
+/*Depoimentos*/
+
+/* Footer */
+.footer {
+  background-color: #f9fafb;
+  padding: 96px 0;
+}
+.footer h1 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 40px;
+}
+.footer-form {
+  gap: 16px;
+}
+
+.reg {
+  color: #98a2b3;
+  margin-top: 32px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px 40px;
+  }
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 24px 0;
+  }
+  .botoes-menu,
+  .menu-lista {
+    display: none;
+  }
+  .menu-extra {
+    display: block;
+    padding: 10px 12px;
+    width: 80px;
+    place-self: end;
+  }
+  .depoimentos {
+    border-radius: 0;
+  }
+  .metricas {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container {
+    padding: 40px;
+    margin: 0;
+  }
+
+  .vagas-showcase {
+    align-items: initial;
+  }
+  .vagas1 h1,
+  .vagas2 h1 {
+    width: inherit;
+  }
+}
+
+@media (max-width: 640px) {
+  .sobre-nos h1 {
+    font-size: 36px;
+  }
+  .sobre-nos p {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .metrica-box h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  .ad-vagas p {
+    font-size: 18px;
+  }
+  .depoimentos h1,
+  .ad-vagas h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
